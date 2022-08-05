@@ -23,7 +23,8 @@ body {
     border-bottom: 1px solid #DBDBDB;
 }
 
-/*Header*/
+
+/*!Header*/
 .header {
     width: 944px;
     height: 54px;
@@ -68,7 +69,7 @@ body {
 .top-menu > :first-child, .top-menu > :nth-child(2), .top-menu > :nth-child(3){
     margin-right: 10px;
 }
-/*End of Header*/
+/*!End of Header*/
 
 
 ion-icon{
@@ -77,13 +78,14 @@ ion-icon{
 }
 
 
-/*Container*/
+/*!Container*/
 .container{
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    overflow: hidden;
 }
 .sidebar{
     display: flex;
@@ -96,42 +98,80 @@ ion-icon{
 }
 .feed{
     width: 614px;
+    height: 100vh;
     background-color: yellow;
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
     overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
-/*!Hiding the scrollbar in most of browsers*/
-    /*-ms-overflow-style: none;  /* Internet Explorer 10+ */
-    /*scrollbar-width: none;  /* Firefox */
-/*.feed::-webkit-scrollbar { 
+/*?Hiding the scrollbar in most of browsers*/
+.feed::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
-/*}*/
+}
+.p{
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+}
+.h1{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
 .stories{
     margin-top: 34px;
     height: 118px;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: green;
     border: 1px solid #DBDBDB;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-bottom: 24px;
+    position: relative;
+}
+.stories-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    z-index: 2;
 }
 .story{
+    width: 66px;
+    height: 79px;
+    margin-right: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.story-img{
+    height: 66px;
+    width: 66px;
+}
+.background-img{
+    height: 66px;
+    width: 66px;
+    background-image: url("img/background-stories.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .main-feed{
     width: 100%;
+    height: 100%;
 }
 .post{
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: red;
     margin-bottom: 24px;
 }
-/*End of Container*/
+/*!End of Container*/
 
 
-/*Media Query*/
+/*!Media Query*/
 .mobile-header{
     height: 54px;
     width: 100%;
@@ -140,6 +180,12 @@ ion-icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.mobile-header > :first-child{
+    margin-left: 20px;
+}
+.mobile-header > :last-child{
+    margin-right: 20px;
 }
 @media (min-device-width: 945px){
     .mobile-header{
@@ -160,11 +206,5 @@ ion-icon{
     }
     .control, .container, .feed{
         width: 100%;
-    }
-    .mobile-header > :first-child{
-        margin-left: 20px;
-    }
-    .mobile-header > :last-child{
-        margin-right: 20px;
     }
 }

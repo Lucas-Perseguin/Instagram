@@ -96,8 +96,7 @@ strong{
     align-items: flex-start;
     width: 300px;
     padding-left: 30px;
-    height: 50vh;
-    background-color: blue;
+    padding-top: 57px;
 }
 .feed{
     width: 614px;
@@ -243,6 +242,78 @@ strong{
 .post-info > :nth-child(2){
     font-weight: 300;
     margin-left: 5px;
+}
+.sidebar p{
+    font-weight: 400;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+.main-perfil{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.main-perfil img{
+    margin-right: 17px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.main-perfil h1{
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.main-perfil p{
+    font-weight: 300;
+}
+.sugestions{
+    margin-top: 24px;
+    margin-bottom: 33px;
+    width: 100%;
+}
+.sugestions > :first-child{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+.sugestions > :first-child p{
+    color: #262626;
+}
+.suggested-perfil{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.suggested-perfil img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+.suggested-perfil > :first-child{
+    display: flex;
+    align-items: center;
+}
+.suggested-perfil > :first-child h1{
+    font-weight: 500;
+    font-size: 14px;
+    color: #262626;
+    margin-bottom: 6px;
+}
+.suggested-perfil > :first-child p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+.suggested-perfil > :nth-child(2){
+    font-weight: 500;
+    font-size: 12px;
+    color: #139EF2;
 }
 /*!End of Container*/
 

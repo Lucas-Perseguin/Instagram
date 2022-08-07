@@ -466,6 +466,8 @@ label{
     }
     .post{
         border-radius: 0;
+        border-left: 0;
+        border-right: 0; 
     }
     .stories{
         margin: 0;

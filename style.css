@@ -442,7 +442,7 @@ label{
         display: none
     }
 }
-@media (min-device-width: 617px) and (max-device-width: 946px) {
+@media (min-device-width: 615px) and (max-device-width: 946px) {
   .sidebar, .mobile-header, .background-img-mobile, .bottom-menu-mobile{
     display: none;
   }
@@ -450,7 +450,7 @@ label{
     width: 100%;
   }
 }
-@media (max-device-width: 616px) {
+@media (max-device-width: 614px) {
     .sidebar, .header, .back-header, .stories-button, .background-img{
         display: none;
     }

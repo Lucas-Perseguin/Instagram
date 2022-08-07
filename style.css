@@ -63,6 +63,9 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+.searchbar:focus{
+    outline: none;
+}
 .top-menu{
     display: flex;
 }
@@ -311,6 +314,9 @@ label{
     width: 480px;
     height: 22px;
     font-size: 14px;
+}
+.post-bottom > :nth-child(4) input:focus{
+    outline: none;
 }
 .post-bottom > :nth-child(4) button{
     border: none;

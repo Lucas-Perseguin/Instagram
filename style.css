@@ -465,6 +465,9 @@ label{
         border-radius: 50%;
     }
     .post{
-        border-radius: none;
+        border-radius: 0;
+    }
+    .stories{
+        margin: 0;
     }
 }

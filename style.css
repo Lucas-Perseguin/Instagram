@@ -471,5 +471,12 @@ label{
     }
     .stories{
         margin: 0;
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    }
+    /*?Hiding the scrollbar in most of browsers*/
+    .stories::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
     }
 }

@@ -227,7 +227,7 @@ strong{
 .post-menu > :nth-child(2){
     height: 30px;
     width: 22px;
-    margin-right: 18px;
+    margin-right: 17px;
     margin-bottom: 4px;
 }
 .post-info{
@@ -249,7 +249,51 @@ strong{
     font-weight: 300;
     margin-left: 5px;
 }
+svg, label{
+    width: 14px;
+    height: 14px;
+}
+label{
+    position: absolute;
+    right: 18px;
+}
+#btnControl1, #btnControl2, #btnControl3, #btnControl4, #btnControl5, #btnControl6, #btnControl7, #btnControl8, #btnControl9{
+    display: none;
+}
+#btnControl1:hover + label > svg, #btnControl2:hover + label > svg, #btnControl3:hover + label > svg, #btnControl4:hover + label > svg, #btnControl5:hover + label > svg, #btnControl6:hover + label > svg, #btnControl7:hover + label > svg, #btnControl8:hover + label > svg, #btnControl9:hover + label > svg{
+    fill: #979797;
+}
+#btnControl1:checked + label > svg,#btnControl2:checked + label > svg, #btnControl3:checked + label > svg,#btnControl4:checked + label > svg,#btnControl5:checked + label > svg, #btnControl6:checked + label > svg,#btnControl7:checked + label > svg,#btnControl8:checked + label > svg, #btnControl9:checked + label > svg{
+    fill: red;
+}
 .post-bottom > :nth-child(3){
+    display: block;
+}
+.comment{
+    margin-bottom: 14px;
+    margin-left: 14px;
+    position: relative;
+}
+.comment, .comment > :first-child, .comment > :first-child > div{
+    color: #262626;
+    display: flex;
+}
+.post-bottom > :nth-child(3) h1{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+.post-bottom > :nth-child(3) p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.post-bottom > :nth-child(3) img{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.post-bottom > :nth-child(4){
     width: 100%;
     display: flex;
     align-items: center;
@@ -258,7 +302,7 @@ strong{
     border-top: 1px solid #DBDBDB;
     padding-top: 14px;
 }
-.post-bottom > :nth-child(3) input{
+.post-bottom > :nth-child(4) input{
     border: none;
     background: none;
     margin-left: 14px;
@@ -266,7 +310,7 @@ strong{
     height: 22px;
     font-size: 14px;
 }
-.post-bottom > :nth-child(3) button{
+.post-bottom > :nth-child(4) button{
     border: none;
     background: none;
     color: #B2DFFC;
@@ -275,7 +319,7 @@ strong{
     transition-property: color;
     transition-duration: 300ms;
 }
-.post-bottom > :nth-child(3) button:hover{
+.post-bottom > :nth-child(4) button:hover{
     color: #0095F6;
 }
 .sidebar p{

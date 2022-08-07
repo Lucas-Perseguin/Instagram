@@ -413,13 +413,37 @@ label{
 .mobile-header > :last-child{
     margin-right: 20px;
 }
+.background-img-mobile{
+    height: 66px;
+    width: 66px;
+    background-image: url("img/background-stories.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bottom-menu-mobile{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
 @media (min-device-width: 947px){
-    .mobile-header{
+    .mobile-header, .background-img-mobile, .bottom-menu-mobile{
         display: none
     }
 }
 @media (min-device-width: 617px) and (max-device-width: 946px) {
-  .sidebar, .mobile-header{
+  .sidebar, .mobile-header, .background-img-mobile, .bottom-menu-mobile{
     display: none;
   }
   .header{
@@ -427,10 +451,20 @@ label{
   }
 }
 @media (max-device-width: 616px) {
-    .sidebar, .header, .back-header{
+    .sidebar, .header, .back-header, .stories-button, .background-img{
         display: none;
     }
     .control, .container, .feed{
         width: 100%;
+    }
+    .stories{
+        background: none;
+        border: none;
+    }
+    .story-img{
+        border-radius: 50%;
+    }
+    .post{
+        border-radius: none;
     }
 }

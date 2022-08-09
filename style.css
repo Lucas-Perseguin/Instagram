@@ -26,7 +26,7 @@ body {
 
 /*!Header*/
 .header {
-    width: 944px;
+    width: 935px;
     height: 54px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DBDBDB;
@@ -97,7 +97,7 @@ strong{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 300px;
+    width: 293px;
     padding-left: 30px;
     padding-top: 57px;
 }
@@ -446,12 +446,12 @@ label{
     align-items: center;
     z-index: 3;
 }
-@media (min-device-width: 947px){
+@media (min-device-width: 936px){
     .mobile-header, .background-img-mobile, .bottom-menu-mobile{
         display: none
     }
 }
-@media (min-device-width: 615px) and (max-device-width: 946px) {
+@media (min-device-width: 615px) and (max-device-width: 935px) {
   .sidebar, .mobile-header, .background-img-mobile, .bottom-menu-mobile{
     display: none;
   }
